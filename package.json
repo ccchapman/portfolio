@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,5 +10,12 @@
     "next": "9.1.1",
     "react": "16.10.2",
     "react-dom": "16.10.2"
+  },
+  "devDependencies": {
+    "babel-plugin-macros": "^2.6.1",
+    "babel-preset-react": "^6.24.1",
+    "styled-components": "^4.4.0",
+    "tailwind.macro": "^1.0.0-alpha.10",
+    "tailwindcss": "^1.1.2"
   }
 }
