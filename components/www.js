@@ -2,9 +2,18 @@ import React, { useEffect } from "react";
 import s from "styled-components";
 import tw from "tailwind.macro";
 import anime from "animejs";
-
 const WwwWrapper = s.div`
-  ${tw`absolute top-0 left-0 font-mono text-6xl leading-none w-full whitespace-no-wrap`}
+  ${tw`
+    absolute
+    top-0
+    left-0
+    font-mono
+    text-6xl
+    leading-none
+    w-full
+    whitespace-no-wrap
+    select-none
+  `}
 `;
 
 const Www = () => {
