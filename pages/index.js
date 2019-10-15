@@ -1,9 +1,9 @@
-import React from "react";
+import React  from "react";
+
+import Www from "../components/www";
 
 const Home = () => (
-  <div>
-    ccchapman.ca
-  </div>
+  <Www />
 );
 
 export default Home;
