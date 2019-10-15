@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import s from "styled-components";
 import tw from "tailwind.macro";
 import anime from "animejs";
+
 const WwwWrapper = s.div`
   ${tw`
     absolute
