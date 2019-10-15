@@ -15,6 +15,7 @@ const WwwWrapper = s.div`
     w-full
     whitespace-no-wrap
     select-none
+    opacity-20
   `}
 `;
 
@@ -39,7 +40,7 @@ const Www = () => {
 
   return (
     <WwwWrapper ref={wwwWrapperRef}>
-      <WwwInner ariaHidden={true}>
+      <WwwInner aria-hidden={true}>
         {[...Array(30).keys()].map(() => `www `)}
       </WwwInner>
     </WwwWrapper>
