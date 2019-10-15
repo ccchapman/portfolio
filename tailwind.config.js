@@ -1,6 +1,8 @@
 module.exports = {
   theme: {
-    extend: {}
+    fontFamily: {
+      mono: ['Fira Code']
+    }
   },
   variants: {},
   plugins: []
