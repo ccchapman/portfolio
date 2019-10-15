@@ -15,7 +15,7 @@ const WwwWrapper = s.div`
     w-full
     whitespace-no-wrap
     select-none
-    opacity-20
+    opacity-25
   `}
 `;
 
