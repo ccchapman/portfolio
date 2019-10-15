@@ -2,18 +2,25 @@ import React, { useEffect } from "react";
 import s from "styled-components";
 import tw from "tailwind.macro";
 import anime from "animejs";
+
 const WwwWrapper = s.div`
   ${tw`
-    absolute
+    fixed
     top-0
     left-0
     font-mono
-    text-6xl
+    text-4xl
+    md:text-6xl
     leading-none
     w-full
     whitespace-no-wrap
     select-none
   `}
+`;
+
+const WwwInner = s.div`
+  transform: rotate(90deg) translateY(-100%);
+  transform-origin: left;
 `;
 
 const Www = () => {
@@ -22,7 +29,7 @@ const Www = () => {
   useEffect(() => {
     anime({
       targets: wwwWrapperRef.current,
-      translateX: "-100vw",
+      translateY: "-100vh",
       direction: "alternate",
       loop: true,
       duration: 5000,
@@ -32,7 +39,9 @@ const Www = () => {
 
   return (
     <WwwWrapper ref={wwwWrapperRef}>
-      www www www www www www www www www www www www www www www www www www www www www www www www
+      <WwwInner ariaHidden={true}>
+        {[...Array(30).keys()].map(() => `www `)}
+      </WwwInner>
     </WwwWrapper>
   );
 };

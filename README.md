@@ -1,0 +1,1 @@
+[![buddy pipeline](https://app.buddy.works/chrischapman/portfolio/pipelines/pipeline/216029/badge.svg?token=af53fa940b13d9fdba1f3f9937a45f70235c517793edb519ce40d4b1f8860372 "buddy pipeline")](https://app.buddy.works/chrischapman/portfolio/pipelines/pipeline/216029)
