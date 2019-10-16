@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, createRef } from "react";
 import s from "styled-components";
 import tw from "tailwind.macro";
 import anime from "animejs";
@@ -15,6 +15,8 @@ const WwwWrapper = s.div`
     w-full
     whitespace-no-wrap
     select-none
+    opacity-25
+    text-white
   `}
 `;
 
@@ -24,7 +26,7 @@ const WwwInner = s.div`
 `;
 
 const Www = () => {
-  const wwwWrapperRef = React.createRef();
+  const wwwWrapperRef = createRef();
 
   useEffect(() => {
     anime({
@@ -39,7 +41,7 @@ const Www = () => {
 
   return (
     <WwwWrapper ref={wwwWrapperRef}>
-      <WwwInner ariaHidden={true}>
+      <WwwInner aria-hidden={true}>
         {[...Array(30).keys()].map(() => `www `)}
       </WwwInner>
     </WwwWrapper>
