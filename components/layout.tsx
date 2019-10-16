@@ -6,7 +6,9 @@ const LayoutWrapper = s.div`
   ${tw`
     antialiased
     bg-purple-500
+    text-white
     min-h-screen
+    font-mono
   `}
 `;
 

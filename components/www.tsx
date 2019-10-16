@@ -8,7 +8,6 @@ const WwwWrapper = s.div`
     fixed
     top-0
     left-0
-    font-mono
     text-4xl
     md:text-6xl
     leading-none
