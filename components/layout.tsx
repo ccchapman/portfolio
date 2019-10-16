@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import s from "styled-components";
 import tw from "tailwind.macro";
 
@@ -11,7 +11,7 @@ const LayoutWrapper = s.div`
 `;
 
 const Layout = ({
-  children
+  children,
 }) => (
   <LayoutWrapper>
     <style jsx global>{`
