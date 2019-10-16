@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, createRef } from "react";
 import s from "styled-components";
 import tw from "tailwind.macro";
 import anime from "animejs";
@@ -26,7 +26,7 @@ const WwwInner = s.div`
 `;
 
 const Www = () => {
-  const wwwWrapperRef = React.createRef();
+  const wwwWrapperRef = createRef();
 
   useEffect(() => {
     anime({
