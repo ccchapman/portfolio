@@ -5,8 +5,7 @@ import tw from "tailwind.macro";
 const LayoutWrapper = s.div`
   ${tw`
     antialiased
-    bg-purple-500
-    min-h-screen
+    font-mono
   `}
 `;
 
