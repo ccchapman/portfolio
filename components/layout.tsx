@@ -21,7 +21,7 @@ const Layout = ({
       </title>
     </Helmet>
 
-    <style jsx global>
+    <style>
       {`
       @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
       @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900|Fira+Code&display=swap');
