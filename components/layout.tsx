@@ -5,8 +5,8 @@ import tw from "tailwind.macro";
 const LayoutWrapper = s.div`
   ${tw`
     antialiased
-    font-mono
-    text-gray-900
+    font-sans
+    text-gray-700
   `}
 `;
 
@@ -22,7 +22,7 @@ const Layout = ({
 
     <style jsx global>{`
       @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
-      @import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900|Fira+Code&display=swap');
     `}</style>
 
     {children}

@@ -15,6 +15,7 @@ const WwwWrapper = s.div`
     whitespace-no-wrap
     select-none
     opacity-25
+    font-mono
   `}
 `;
 
