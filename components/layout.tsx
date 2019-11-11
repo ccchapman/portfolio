@@ -1,3 +1,4 @@
+import Helmet from "react-helmet";
 import s from "styled-components";
 import tw from "tailwind.macro";
 
@@ -12,6 +13,12 @@ const Layout = ({
   children,
 }) => (
   <LayoutWrapper>
+    <Helmet>
+      <title>
+        Chris Chapman's Portfolio
+      </title>
+    </Helmet>
+
     <style jsx global>{`
       @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
       @import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
