@@ -1,4 +1,4 @@
-import React, { useEffect, createRef } from "react";
+import { useEffect, createRef } from "react";
 import s from "styled-components";
 import tw from "tailwind.macro";
 import anime from "animejs";
