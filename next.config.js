@@ -1,13 +1,15 @@
 module.exports = {
   webpack: (config, { isServer }) => {
+    const patchedConfig = config;
+
     // Fixes npm packages that depend on browser variables
     if (!isServer) {
-      config.node = {
-        animejs: "empty",
-        fs: "empty",
-      }
+      patchedConfig.node = {
+        animejs: 'empty',
+        fs: 'empty',
+      };
     }
 
-    return config;
-  }
+    return patchedConfig;
+  },
 };

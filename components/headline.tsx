@@ -1,7 +1,8 @@
-import { createRef, useEffect } from "react";
-import s from "styled-components";
-import tw from "tailwind.macro";
-import anime from "animejs";
+import { createRef, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import s from 'styled-components';
+import tw from 'tailwind.macro';
+import anime from 'animejs';
 
 const HeadlineWrapper = s.div`
   ${tw`
@@ -9,7 +10,7 @@ const HeadlineWrapper = s.div`
     overflow-hidden
   `}
 
-  ${props => props.as === "h1" && tw`
+  ${(props) => props.as === 'h1' && tw`
     mb-6
     text-4xl
     md:text-6xl
@@ -26,7 +27,7 @@ const Headline = ({
   useEffect(() => {
     const { current } = headlineRef;
     // TODO - Each letter should come from refs, not a query
-    const targets = Array.from(current.querySelectorAll("span"));
+    const targets = Array.from(current.querySelectorAll('span'));
 
     anime.timeline({ loop: false })
       .add({
@@ -34,25 +35,30 @@ const Headline = ({
         translateY: [-100, 0],
         opacity: [0, 1],
         translateZ: 0,
-        easing: "easeOutExpo",
+        easing: 'easeOutExpo',
         duration: 500,
-        delay: (el, i) => 250 + 50 * i
+        delay: (el, i) => 250 + 50 * i,
       });
   }, []);
 
   return (
     <HeadlineWrapper as={element} ref={headlineRef}>
-      {children.split("").map((letter, index) =>
-        <span key={index} style={{ display: "inline-block" }}>
-          {letter.replace(" ", "\u00a0")}
+      {children.split('').map((letter, index) => (
+        <span key={index} style={{ display: 'inline-block' }}>
+          {letter.replace(' ', '\u00a0')}
         </span>
-      )}
+      ))}
     </HeadlineWrapper>
   );
 };
 
 Headline.defaultProps = {
-  element: "h1",
+  element: 'h1',
+};
+
+Headline.propTypes = {
+  children: PropTypes.node,
+  element: PropTypes.string,
 };
 
 export default Headline;

@@ -1,7 +1,8 @@
-import { createRef, useEffect } from "react";
-import s from "styled-components";
-import tw from "tailwind.macro";
-import anime from "animejs";
+import { createRef, useEffect } from 'react';
+import PropTypes from 'prop-types';
+import s from 'styled-components';
+import tw from 'tailwind.macro';
+import anime from 'animejs';
 
 const TextWrapper = s.div`
   ${tw`
@@ -20,7 +21,7 @@ const Text = ({
       translateY: [40, 0],
       opacity: [0, 1],
       duration: 1000,
-      easing: "easeInOutSine",
+      easing: 'easeInOutSine',
     });
   }, []);
 
@@ -29,6 +30,10 @@ const Text = ({
       {children}
     </TextWrapper>
   );
+};
+
+Text.propTypes = {
+  children: PropTypes.node,
 };
 
 export default Text;
