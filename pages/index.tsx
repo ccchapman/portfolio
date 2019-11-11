@@ -7,7 +7,7 @@ const Home = () => (
     <Www />
     <Jumbotron
       headline="Chris Chapman"
-      text="Full-stack Web Development"
+      text="Front-End Web Developer in Vancouver, B.C."
     />
   </Layout>
 );

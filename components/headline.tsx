@@ -7,8 +7,10 @@ const HeadlineWrapper = s.div`
   `}
 
   ${props => props.as === "h1" && tw`
+    mb-6
     text-4xl
     md:text-6xl
+    tracking-wide
   `}
 `;
 

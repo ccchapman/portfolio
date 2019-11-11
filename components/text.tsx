@@ -3,6 +3,7 @@ import tw from "tailwind.macro";
 
 const TextWrapper = s.div`
   ${tw`
+    tracking-wide
   `}
 `;
 
