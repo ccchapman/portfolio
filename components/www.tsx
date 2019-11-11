@@ -15,7 +15,6 @@ const WwwWrapper = s.div`
     whitespace-no-wrap
     select-none
     opacity-25
-    text-white
   `}
 `;
 
@@ -33,7 +32,7 @@ const Www = () => {
       translateY: "-100vh",
       direction: "alternate",
       loop: true,
-      duration: 5000,
+      duration: 7500,
       easing: "easeInOutSine",
     });
   }, []);
