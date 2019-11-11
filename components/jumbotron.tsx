@@ -6,8 +6,7 @@ import Text from "./text";
 
 const JumbotronWrapper = s.div`
   ${tw`
-    bg-purple-500
-    text-white
+    bg-gray-100
     min-h-screen
     flex
     flex-col
