@@ -1,7 +1,7 @@
-import { useEffect, createRef } from "react";
-import s from "styled-components";
-import tw from "tailwind.macro";
-import anime from "animejs";
+import { useEffect, createRef } from 'react';
+import s from 'styled-components';
+import tw from 'tailwind.macro';
+import anime from 'animejs';
 
 const WwwWrapper = s.div`
   ${tw`
@@ -30,18 +30,18 @@ const Www = () => {
   useEffect(() => {
     anime({
       targets: wwwWrapperRef.current,
-      translateY: "-100vh",
-      direction: "alternate",
+      translateY: '-100vh',
+      direction: 'alternate',
       loop: true,
       duration: 7500,
-      easing: "easeInOutSine",
+      easing: 'easeInOutSine',
     });
   }, []);
 
   return (
     <WwwWrapper ref={wwwWrapperRef}>
-      <WwwInner aria-hidden={true}>
-        {[...Array(30).keys()].map(() => `www `)}
+      <WwwInner aria-hidden>
+        {[...Array(30).keys()].map(() => 'www ')}
       </WwwInner>
     </WwwWrapper>
   );

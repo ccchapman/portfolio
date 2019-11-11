@@ -1,8 +1,9 @@
-import s from "styled-components";
-import tw from "tailwind.macro";
+import PropTypes from 'prop-types';
+import s from 'styled-components';
+import tw from 'tailwind.macro';
 
-import Headline from "./headline";
-import Text from "./text";
+import Headline from './headline';
+import Text from './text';
 
 const JumbotronWrapper = s.div`
   ${tw`
@@ -35,5 +36,10 @@ const Jumbotron = ({
     )}
   </JumbotronWrapper>
 );
+
+Jumbotron.propTypes = {
+  headline: PropTypes.string,
+  text: PropTypes.string,
+};
 
 export default Jumbotron;
