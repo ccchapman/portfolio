@@ -17,15 +17,22 @@ const JumbotronWrapper = s.div`
   `}
 `;
 
-const Jumbotron = () => (
+const Jumbotron = ({
+  headline,
+  text,
+}) => (
   <JumbotronWrapper>
-    <Headline>
-      Chris Chapman
-    </Headline>
+    {headline && (
+      <Headline>
+        {headline}
+      </Headline>
+    )}
 
-    <Text>
-      Full-Stack Web Development
-    </Text>
+    {text && (
+      <Text>
+        {text}
+      </Text>
+    )}
   </JumbotronWrapper>
 );
 

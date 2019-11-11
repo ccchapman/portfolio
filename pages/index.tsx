@@ -7,7 +7,10 @@ import Jumbotron from "../components/jumbotron";
 const Home = () => (
   <Layout>
     <Www />
-    <Jumbotron />
+    <Jumbotron
+      headline="Chris Chapman"
+      text="Full-stack Web Development"
+    />
   </Layout>
 );
 
