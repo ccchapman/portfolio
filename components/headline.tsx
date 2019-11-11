@@ -13,7 +13,7 @@ const HeadlineWrapper = s.div`
     mb-6
     text-4xl
     md:text-6xl
-    tracking-wide
+    md:tracking-wide
   `}
 `;
 

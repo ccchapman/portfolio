@@ -12,6 +12,8 @@ const JumbotronWrapper = s.div`
     flex-col
     items-center
     justify-center
+    px-4
+    text-center
   `}
 `;
 
