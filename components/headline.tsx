@@ -35,7 +35,7 @@ const Headline = ({
         opacity: [0, 1],
         translateZ: 0,
         easing: "easeOutExpo",
-        duration: 750,
+        duration: 500,
         delay: (el, i) => 250 + 50 * i
       });
   }, []);
